@@ -1,0 +1,173 @@
+[2015-10-02 17:59:54] set names utf8
+[2015-10-02 17:59:54] DESC yongf_category
+[2015-10-02 17:59:54] SELECT * FROM yongf_category
+[2015-10-02 18:00:17] set names utf8
+[2015-10-02 18:00:17] DESC yongf_category
+[2015-10-02 18:00:17] SELECT * FROM yongf_category
+[2015-10-02 18:00:37] set names utf8
+[2015-10-02 18:00:37] DESC yongf_category
+[2015-10-02 18:00:37] SELECT * FROM yongf_category
+[2015-10-02 18:01:12] set names utf8
+[2015-10-02 18:01:12] DESC yongf_category
+[2015-10-02 18:01:12] SELECT * FROM yongf_category
+[2015-10-02 18:01:17] set names utf8
+[2015-10-02 18:01:17] DESC yongf_category
+[2015-10-02 18:01:17] SELECT * FROM yongf_category
+[2015-10-02 18:01:21] set names utf8
+[2015-10-02 18:01:21] DESC yongf_category
+[2015-10-02 18:01:22] SELECT * FROM yongf_category
+[2015-10-02 18:01:24] set names utf8
+[2015-10-02 18:01:24] DESC yongf_category
+[2015-10-02 18:01:24] SELECT * FROM yongf_category
+[2015-10-02 18:01:48] set names utf8
+[2015-10-02 18:01:48] DESC yongf_admin
+[2015-10-02 18:01:48] SELECT * FROM yongf_admin 
+		WHERE admin_name = 'admin' AND password = '21232f297a57a5a743894a0e4a801fc3' 
+		LIMIT 1
+[2015-10-02 18:01:56] set names utf8
+[2015-10-02 18:01:56] DESC yongf_category
+[2015-10-02 18:01:56] SELECT * FROM yongf_category
+[2015-10-02 18:01:56] set names utf8
+[2015-10-02 18:01:56] DESC yongf_goods_type
+[2015-10-02 18:01:56] SELECT * FROM yongf_goods_type ORDER BY type_id
+[2015-10-02 18:01:58] set names utf8
+[2015-10-02 18:01:58] DESC yongf_category
+[2015-10-02 18:01:58] SELECT * FROM yongf_category
+[2015-10-02 18:01:59] set names utf8
+[2015-10-02 18:01:59] DESC yongf_goods_type
+[2015-10-02 18:01:59] SELECT a.*,COUNT(b.attr_name) AS num FROM yongf_goods_type AS a 
+					LEFT JOIN yongf_attribute AS b 
+				    ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY type_id LIMIT 0,2
+[2015-10-02 18:01:59] select count(*) from yongf_goods_type
+[2015-10-02 18:02:02] set names utf8
+[2015-10-02 18:02:02] DESC yongf_category
+[2015-10-02 18:02:02] SELECT * FROM yongf_category
+[2015-10-02 18:02:05] set names utf8
+[2015-10-02 18:02:05] DESC yongf_category
+[2015-10-02 18:02:05] SELECT * FROM yongf_category
+[2015-10-02 18:02:05] set names utf8
+[2015-10-02 18:02:05] DESC yongf_goods_type
+[2015-10-02 18:02:05] SELECT * FROM yongf_goods_type ORDER BY type_id
+[2015-10-02 18:02:08] set names utf8
+[2015-10-02 18:02:08] DESC yongf_goods_type
+[2015-10-02 18:02:08] SELECT a.*,COUNT(b.attr_name) AS num FROM yongf_goods_type AS a 
+					LEFT JOIN yongf_attribute AS b 
+				    ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY type_id LIMIT 0,2
+[2015-10-02 18:02:08] select count(*) from yongf_goods_type
+[2015-10-02 18:02:11] set names utf8
+[2015-10-02 18:02:11] DESC yongf_category
+[2015-10-02 18:02:11] SELECT * FROM yongf_category
+[2015-10-02 18:02:23] set names utf8
+[2015-10-02 18:02:23] DESC yongf_category
+[2015-10-02 18:02:23] SELECT * FROM yongf_category
+[2015-10-02 18:03:11] set names utf8
+[2015-10-02 18:03:11] DESC yongf_category
+[2015-10-02 18:03:11] INSERT INTO `yongf_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('计算机程序设计艺术','8','本','50','1','计算机程序设计艺术，极好的算法书！')
+[2015-10-02 18:03:13] set names utf8
+[2015-10-02 18:03:13] DESC yongf_category
+[2015-10-02 18:03:13] SELECT * FROM yongf_category
+[2015-10-02 18:03:26] set names utf8
+[2015-10-02 18:03:26] DESC yongf_category
+[2015-10-02 18:03:26] select * from yongf_category where cat_id=9
+[2015-10-02 18:03:26] SELECT * FROM yongf_category
+[2015-10-02 18:03:28] set names utf8
+[2015-10-02 18:03:28] DESC yongf_category
+[2015-10-02 18:03:28] SELECT * FROM yongf_category
+[2015-10-02 18:03:28] UPDATE `yongf_category` SET `cat_name`='计算机程序设计艺术',`parent_id`='8',`unit`='本',`sort_order`='50',`is_show`='1',`cat_desc`='计算机程序设计艺术，极好的算法书！' WHERE `cat_id`=9
+[2015-10-02 18:03:31] set names utf8
+[2015-10-02 18:03:31] DESC yongf_category
+[2015-10-02 18:03:31] select * from yongf_category where cat_id=9
+[2015-10-02 18:03:31] SELECT * FROM yongf_category
+[2015-10-02 18:03:39] set names utf8
+[2015-10-02 18:03:39] DESC yongf_category
+[2015-10-02 18:03:39] SELECT * FROM yongf_category
+[2015-10-02 18:04:10] set names utf8
+[2015-10-02 18:04:10] DESC yongf_category
+[2015-10-02 18:04:10] SELECT * FROM yongf_category
+[2015-10-02 18:04:22] set names utf8
+[2015-10-02 18:04:22] DESC yongf_category
+[2015-10-02 18:04:22] SELECT * FROM yongf_category
+[2015-10-02 18:04:27] set names utf8
+[2015-10-02 18:04:27] DESC yongf_category
+[2015-10-02 18:04:27] SELECT * FROM yongf_category
+[2015-10-02 18:04:44] set names utf8
+[2015-10-02 18:04:45] DESC yongf_category
+[2015-10-02 18:04:45] SELECT * FROM yongf_category
+[2015-10-02 18:04:55] set names utf8
+[2015-10-02 18:04:55] DESC yongf_category
+[2015-10-02 18:04:55] SELECT * FROM yongf_category
+[2015-10-02 18:05:01] set names utf8
+[2015-10-02 18:05:01] DESC yongf_category
+[2015-10-02 18:05:01] SELECT * FROM yongf_category
+[2015-10-02 18:05:34] set names utf8
+[2015-10-02 18:05:34] DESC yongf_category
+[2015-10-02 18:05:34] INSERT INTO `yongf_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('粉色连衣裙','6','套','50','1','怎么穿，怎么好看！')
+[2015-10-02 18:05:36] set names utf8
+[2015-10-02 18:05:36] DESC yongf_category
+[2015-10-02 18:05:36] SELECT * FROM yongf_category
+[2015-10-02 18:05:52] set names utf8
+[2015-10-02 18:05:52] DESC yongf_category
+[2015-10-02 18:05:52] SELECT * FROM yongf_category
+[2015-10-02 18:05:59] set names utf8
+[2015-10-02 18:05:59] DESC yongf_category
+[2015-10-02 18:05:59] SELECT * FROM yongf_category
+[2015-10-02 18:06:19] set names utf8
+[2015-10-02 18:06:19] DESC yongf_category
+[2015-10-02 18:06:19] SELECT * FROM yongf_category
+[2015-10-02 18:06:23] set names utf8
+[2015-10-02 18:06:23] DESC yongf_category
+[2015-10-02 18:06:23] SELECT * FROM yongf_category
+[2015-10-02 18:06:41] set names utf8
+[2015-10-02 18:06:41] DESC yongf_category
+[2015-10-02 18:06:41] SELECT * FROM yongf_category
+[2015-10-02 18:06:50] set names utf8
+[2015-10-02 18:06:50] DESC yongf_category
+[2015-10-02 18:06:50] SELECT * FROM yongf_category
+[2015-10-02 18:07:01] set names utf8
+[2015-10-02 18:07:01] DESC yongf_category
+[2015-10-02 18:07:01] SELECT * FROM yongf_category
+[2015-10-02 18:07:10] set names utf8
+[2015-10-02 18:07:10] DESC yongf_category
+[2015-10-02 18:07:10] SELECT * FROM yongf_category
+[2015-10-02 18:20:09] set names utf8
+[2015-10-02 18:20:09] DESC yongf_category
+[2015-10-02 18:20:09] SELECT * FROM yongf_category
+[2015-10-02 18:20:09] set names utf8
+[2015-10-02 18:20:09] DESC yongf_goods
+[2015-10-02 18:20:09] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
+[2015-10-02 18:21:54] set names utf8
+[2015-10-02 18:21:54] DESC yongf_category
+[2015-10-02 18:21:54] SELECT * FROM yongf_category
+[2015-10-02 18:21:54] set names utf8
+[2015-10-02 18:21:54] DESC yongf_goods
+[2015-10-02 18:21:54] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
+[2015-10-02 18:22:27] set names utf8
+[2015-10-02 18:22:27] DESC yongf_category
+[2015-10-02 18:22:27] SELECT * FROM yongf_category
+[2015-10-02 18:22:27] set names utf8
+[2015-10-02 18:22:27] DESC yongf_goods
+[2015-10-02 18:22:27] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
+[2015-10-02 18:24:41] set names utf8
+[2015-10-02 18:24:41] DESC yongf_category
+[2015-10-02 18:24:41] SELECT * FROM yongf_category
+[2015-10-02 18:24:41] set names utf8
+[2015-10-02 18:24:41] DESC yongf_goods
+[2015-10-02 18:24:41] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
+[2015-10-02 18:24:51] set names utf8
+[2015-10-02 18:24:51] DESC yongf_category
+[2015-10-02 18:24:51] SELECT * FROM yongf_category
+[2015-10-02 18:24:51] set names utf8
+[2015-10-02 18:24:51] DESC yongf_goods
+[2015-10-02 18:24:51] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
+[2015-10-02 18:32:46] set names utf8
+[2015-10-02 18:32:47] DESC yongf_category
+[2015-10-02 18:32:47] SELECT * FROM yongf_category
+[2015-10-02 18:32:47] set names utf8
+[2015-10-02 18:32:47] DESC yongf_goods
+[2015-10-02 18:32:47] select * from yongf_goods where is_best = 1 
+		and is_onsale = 1 order by add_time desc limit 4
